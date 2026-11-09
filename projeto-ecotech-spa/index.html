@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTech Solutions | Tecnologia Sustentável</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-principal" data-bs-offset="70">
+
+    <!-- CABEÇALHO (NAVBAR FIXED) -->
+    <header>
+        <nav id="navbar-principal" class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#hero">
+                    <i class="fa-solid fa-leaf me-2"></i>EcoTech
+                </a>
+                
+                <div class="d-flex align-items-center order-lg-last ms-2">
+                    <!-- RECURSO JS 1: Botão Dark/Light Mode -->
+                    <button class="btn btn-outline-light btn-sm rounded-circle me-2" id="btn-theme-toggle" aria-label="Alternar Tema">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO PRINCIPAL (HERO SECTION) -->
+        <section id="hero" class="vh-100 d-flex align-items-center text-center text-white bg-dark position-relative">
+            <div class="overlay"></div>
+            <div class="container position-relative z-1">
+                <h1 class="display-3 fw-bold mb-3">Tecnologia para um Futuro Sustentável</h1>
+                <p class="lead mb-4">Transformamos a eficiência energética da sua empresa com soluções limpas e inteligentes.</p>
+                <a href="#contato" class="btn btn-success btn-lg px-4 me-md-2 fw-semibold">Solicitar Diagnóstico</a>
+                <a href="#servicos" class="btn btn-outline-light btn-lg px-4">Conhecer Soluções</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="py-5">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80" alt="Sobre a EcoTech" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold text-success mb-3">Sobre a EcoTech Solutions</h2>
+                        <p class="lead">Nossa missão é alinhar a transformação digital ao compromisso socioambiental.</p>
+                        <p>Desde 2020, auxiliamos microempresas e grandes organizações a otimizarem o consumo de recursos por meio do monitoramento inteligente de energia e integração de fontes renováveis.</p>
+                        
+                        <!-- RECURSO JS 2: Contadores Animados -->
+                        <div class="row text-center mt-4">
+                            <div class="col-4">
+                                <h3 class="fw-bold text-success counter" data-target="150">0</h3>
+                                <p class="small text-muted">Projetos Entregues</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold text-success counter" data-target="98">0</h3>
+                                <p class="small text-muted">% Satisfação</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold text-success counter" data-target="45">0</h3>
+                                <p class="small text-muted">Toneladas CO₂ Evitadas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SERVIÇOS (CARDS BOOTSTRAP) -->
+        <section id="servicos" class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-success">Nossas Soluções</h2>
+                    <p class="text-muted">Tecnologias limpas adaptadas às necessidades do seu negócio.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm custom-card">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box bg-success text-white rounded-circle mb-3 mx-auto">
+                                    <i class="fa-solid fa-solar-panel fa-2x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Auditoria Energética</h5>
+                                <p class="card-text text-muted">Mapeamento completo do consumo de energia para identificação de desperdícios e redução de custos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm custom-card">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box bg-success text-white rounded-circle mb-3 mx-auto">
+                                    <i class="fa-solid fa-microchip fa-2x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Sensores IoT Verdes</h5>
+                                <p class="card-text text-muted">Instalação de dispositivos de monitoramento em tempo real do uso de água e eletricidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm custom-card">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box bg-success text-white rounded-circle mb-3 mx-auto">
+                                    <i class="fa-solid fa-tree fa-2x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Certificação ESG</h5>
+                                <p class="card-text text-muted">Consultoria especializada no enquadramento de processos corporativos aos padrões de sustentabilidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DEPOIMENTOS (CARROSSEL BOOTSTRAP) -->
+        <section id="depoimentos" class="py-5">
+            <div class="container py-4">
+                <h2 class="fw-bold text-center text-success mb-5">Quem Confia no Nosso Trabalho</h2>
+                <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <blockquote class="blockquote col-md-8 mx-auto">
+                                <p class="fs-5">"A EcoTech reduziu nosso custo de energia elétrica em 35% no primeiro trimestre. O retorno sobre o investimento foi impressionante!"</p>
+                                <footer class="blockquote-footer mt-2">Mariana Silva, <cite title="Empresa A">Diretora da BioLogística</cite></footer>
+                            </blockquote>
+                        </div>
+                        <div class="carousel-item">
+                            <blockquote class="blockquote col-md-8 mx-auto">
+                                <p class="fs-5">"O processo de consultoria para a certificação ESG foi simples e transparente. Recomendo a todos os microempreendedores."</p>
+                                <footer class="blockquote-footer mt-2">Carlos Eduardo, <cite title="Empresa B">Fundador da Startup Velo</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO (FORMULÁRIO COM VALIDAÇÃO E ENVIO) -->
+        <section id="contato" class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow">
+                            <div class="card-body p-4 p-md-5">
+                                <h2 class="fw-bold text-success text-center mb-2">Fale Conosco</h2>
+                                <p class="text-center text-muted mb-4">Preencha o formulário para receber uma proposta personalizada.</p>
+                                
+                                <form id="form-contato" action="https://formspree.io/f/seu-id-formspree" method="POST" novalidate>
+                                    <div class="row g-3">
+                                        <!-- Campo 1: Nome -->
+                                        <div class="col-md-6">
+                                            <label for="nome" class="form-label fw-semibold">Nome Completo *</label>
+                                            <input type="text" class="form-control" id="nome" name="nome" required>
+                                            <div class="invalid-feedback">Por favor, insira seu nome completo (mínimo 3 caracteres).</div>
+                                        </div>
+
+                                        <!-- Campo 2: E-mail -->
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label fw-semibold">E-mail *</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                            <div class="invalid-feedback">Insira um endereço de e-mail válido.</div>
+                                        </div>
+
+                                        <!-- Campo 3: Assunto -->
+                                        <div class="col-12">
+                                            <label for="assunto" class="form-label fw-semibold">Assunto *</label>
+                                            <select class="form-select" id="assunto" name="assunto" required>
+                                                <option value="" selected disabled>Selecione um assunto...</option>
+                                                <option value="auditoria">Auditoria Energética</option>
+                                                <option value="iot">Sensores IoT Verdes</option>
+                                                <option value="esg">Certificação ESG</option>
+                                                <option value="outros">Outros Assuntos</option>
+                                            </select>
+                                            <div class="invalid-feedback">Por favor, selecione um assunto.</div>
+                                        </div>
+
+                                        <!-- Campo 4: Mensagem -->
+                                        <div class="col-12">
+                                            <label for="mensagem" class="form-label fw-semibold">Mensagem *</label>
+                                            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                                            <div class="invalid-feedback">Escreva uma mensagem com pelo menos 10 caracteres.</div>
+                                        </div>
+
+                                        <!-- Botão Submit -->
+                                        <div class="col-12 text-center mt-4">
+                                            <button type="submit" class="btn btn-success btn-lg px-5" id="btn-submit">
+                                                <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+                                                Enviar Mensagem
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <!-- Feedback de Sucesso/Erro -->
+                                <div id="form-feedback" class="mt-4 alert d-none" role="alert"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="fw-bold text-success mb-1">EcoTech Solutions</h5>
+                    <p class="small text-muted mb-0">&copy; 2026 EcoTech. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Personalizado -->
+    <script src="js/main.js"></script>
+</body>
+</html>
